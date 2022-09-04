@@ -1,0 +1,17 @@
+$_linear-gradient: #f7f6ff;
+$_linear-gradient-alt: hsl(237, 63%, 64%);
+
+$_very-Light-Grayish-Blue: hsl(240, 78%, 98%);
+$_light-grayish-blue: hsl(234, 14%, 74%);
+$_grayish-blue: hsl(233, 13%, 49%);
+$_dark-grayish-blue: hsl(232, 13%, 33%);
+
+$primary-color: $_linear-gradient;
+$primary-dark-color: $_linear-gradient-alt;
+
+$text-color: $_grayish-blue;
+$text-muted-color: $_dark-grayish-blue;
+
+$background-light-color: $_light-grayish-blue;
+$background-very-light-color: $_very-Light-Grayish-Blue;
+$background-dark-color: $_linear-gradient-alt;

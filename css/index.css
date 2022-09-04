@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  background-color: hsl(240deg, 78%, 98%);
+  background-image: url("../../images/bg-top.svg"), url("../../images/bg-bottom.svg");
+  background-size: 30% 50%;
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+}
+
+/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,9 @@
+body {
+  background-color: $background-very-light-color;
+  background-image: url("../../images/bg-top.svg"),
+    url("../../images/bg-bottom.svg");
+
+  background-size: 30% 50%;
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+}
