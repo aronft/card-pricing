@@ -19,28 +19,62 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Frontend Mentor | Our Pricing</title>
   </head>
   <body>
-    <section>
-      <h2 class="title">Our Pricing</h2>
-      <div class="toggle-price">
-        <label for="">
-          <input type="checkbox" name="price" id="priceToggle" />
-          <span> Annually </span>
-          <span>Monthly</span>
-        </label>
+    <section class="pricing-section container">
+      <div class="pricing-section__header">
+        <h2 class="title">Our Pricing</h2>
+        <div class="toggle-price">
+          <label for="">
+            <input type="checkbox" name="price" id="priceToggle" />
+            <span> Annually </span>
+            <span>Monthly</span>
+          </label>
+        </div>
       </div>
-      <div class="card card-light">
-        <h3></h3>
+      <div class="pricing-section__body">
+        <div class="card card-light">
+          <div class="card__header">
+            <h3 class="card__title">Basic</h3>
+            <span class="card__price">&dollar;19.99</span>
+            <span class="card__price-alt">&dollar;199.99</span>
+          </div>
+          <div class="card__body">
+            <p class="card__text">500 GB Storage</p>
+            <p class="card__text">2 Users Allowed</p>
+            <p class="card__text">Send up to 3 GB</p>
+            <button class="button">Learn More</button>
+          </div>
+        </div>
+        <div class="card card-primary">
+          <div class="card__header">
+            <h3 class="card__title">Professional</h3>
+            <span class="card__price">&dollar;24.99</span>
+            <span class="card__price-alt">&dollar;249.99</span>
+          </div>
+          <div class="card__body">
+            <p class="card__text">1 TB Storage</p>
+            <p class="card__text">5 Users Allowed</p>
+            <p class="card__text">Send up to 10 GB</p>
+            <button class="button button-primary">Learn More</button>
+          </div>
+        </div>
+        <div class="card card-light">
+          <div class="card__header">
+            <h3 class="card__title">Master</h3>
+            <span class="card__price">&dollar;39.99</span>
+            <span class="card__price-alt">&dollar;399.99</span>
+          </div>
+          <div class="card__body">
+            <p class="card__text">2 TB Storage</p>
+            <p class="card__text">10 Users Allowed</p>
+            <p class="card__text">Send up to 20 GB</p>
+            <button class="button">Learn More</button>
+          </div>
+        </div>
       </div>
     </section>
-
-    Basic &dollar;19.99 &dollar;199.99 500 GB Storage 2 Users Allowed Send up to
-    3 GB Learn More Professional &dollar;24.99 &dollar;249.99 1 TB Storage 5
-    Users Allowed Send up to 10 GB Learn More Master &dollar;39.99
-    &dollar;399.99 2 TB Storage 10 Users Allowed Send up to 20 GB Learn More
-
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

@@ -1,0 +1,25 @@
+.pricing-section {
+  text-align: center;
+  width: 100%;
+  &__body {
+    display: flex;
+    flex-direction: column;
+    @include for-tablet-landscape {
+      flex-direction: row;
+      justify-content: center;
+      // align-items: center;
+    }
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  &__header {
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    margin-bottom: 2rem;
+  }
+}

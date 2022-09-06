@@ -1,0 +1,5 @@
+@mixin for-tablet-landscape {
+  @media (min-width: 40rem) {
+    @content;
+  }
+}

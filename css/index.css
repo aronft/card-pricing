@@ -3,12 +3,129 @@ body {
   min-height: 100vh;
 }
 
+.button {
+  background: linear-gradient(90deg, hsl(236deg, 72%, 79%) 20%, hsl(237deg, 63%, 64%) 80%);
+  color: hsl(240deg, 78%, 98%);
+  border: 1px solid transparent;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-family: "Montserrat", sans-serif;
+}
+.button:hover {
+  background: transparent;
+  color: hsl(236deg, 72%, 79%);
+  border: 1px solid hsl(236deg, 72%, 79%);
+  cursor: pointer;
+}
+
+.button-primary {
+  background: hsl(240deg, 78%, 98%);
+  border-color: hsl(236deg, 72%, 79%);
+  color: hsl(236deg, 72%, 79%);
+}
+.button-primary:hover {
+  color: hsl(240deg, 78%, 98%);
+}
+
+.title {
+  font-size: 2.2rem;
+}
+
+.card {
+  padding: 1.5rem 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+}
+.card__header {
+  margin-bottom: 2.5rem;
+}
+.card__text {
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid hsl(234deg, 14%, 74%);
+}
+.card:nth-child(2) {
+  margin: 0;
+  padding-top: 3rem;
+}
+.card__price {
+  font-size: 4.4rem;
+}
+.card__price-alt {
+  display: none;
+}
+.card__body > p:last-of-type {
+  border-bottom: 1px solid hsl(234deg, 14%, 74%);
+  margin-bottom: 2rem;
+}
+
+.card-light {
+  background-color: #fff;
+}
+
+.card-primary {
+  background: linear-gradient(45deg, hsl(236deg, 72%, 79%) -10%, hsl(237deg, 63%, 64%) 40%);
+  color: hsl(240deg, 78%, 98%);
+}
+.card-primary .card__text {
+  border-color: hsl(236deg, 72%, 79%);
+}
+.card-primary .card__body > p:last-of-type {
+  border-bottom: 1px solid hsl(236deg, 72%, 79%);
+}
+
+.pricing-section {
+  text-align: center;
+  width: 100%;
+}
+.pricing-section__body {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 40rem) {
+  .pricing-section__body {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+.pricing-section__body > * {
+  flex: 1;
+}
+.pricing-section__header {
+  margin-bottom: 4rem;
+}
+.pricing-section .title {
+  margin-bottom: 2rem;
+}
+
 body {
   background-color: hsl(240deg, 78%, 98%);
   background-image: url("../../images/bg-top.svg"), url("../../images/bg-bottom.svg");
   background-size: 30% 50%;
   background-position: top right, bottom left;
   background-repeat: no-repeat;
+  color: hsl(233deg, 13%, 49%);
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (min-width: 40rem) {
+  body {
+    background-size: 350px 70%, 30% 40%;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 76.6rem;
 }
 
 /*# sourceMappingURL=index.css.map */

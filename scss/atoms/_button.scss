@@ -1,0 +1,33 @@
+.button {
+  background: linear-gradient(
+    90deg,
+    $primary-color 20%,
+    $primary-dark-color 80%
+  );
+  color: $btn-text-color;
+  border: 1px solid transparent;
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  font-size: $fs-btn;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-family: $font-family;
+
+  &:hover {
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    cursor: pointer;
+  }
+}
+
+.button-primary {
+  background: $background-very-light-color;
+  border-color: $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    color: $btn-text-color;
+  }
+}
