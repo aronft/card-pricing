@@ -94,6 +94,7 @@ a {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
   border-radius: 10px;
+  box-shadow: hsla(236deg, 72%, 79%, 0.5) 0px 3px 8px;
 }
 .card__header {
   margin-bottom: 2.5rem;
@@ -107,6 +108,14 @@ a {
 .card:nth-child(2) {
   margin: 0;
   padding-top: 3rem;
+}
+.card:nth-child(1) {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+.card:nth-child(3) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .card__price, .card__price-alt {
   font-size: 4.4rem;
@@ -125,7 +134,7 @@ a {
 }
 
 .card-primary {
-  background: linear-gradient(45deg, hsl(236deg, 72%, 79%) -10%, hsl(237deg, 63%, 64%) 40%);
+  background: linear-gradient(180deg, hsl(236deg, 72%, 79%), hsl(237deg, 63%, 64%));
   color: hsl(240deg, 78%, 98%);
 }
 .card-primary .card__price,
