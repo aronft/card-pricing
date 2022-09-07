@@ -3,6 +3,11 @@ body {
   min-height: 100vh;
 }
 
+h1,
+h2 {
+  margin: 0;
+}
+
 .button {
   background: linear-gradient(90deg, hsl(236deg, 72%, 79%) 20%, hsl(237deg, 63%, 64%) 80%);
   color: hsl(240deg, 78%, 98%);
@@ -31,8 +36,57 @@ body {
   color: hsl(240deg, 78%, 98%);
 }
 
+input[type=checkbox] {
+  display: none;
+}
+
+.container-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-checkbox {
+  position: relative;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  display: inline-block;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 20px;
+  background-color: hsl(237deg, 63%, 64%);
+}
+
+.custom-checkbox:hover {
+  background-color: hsl(236deg, 72%, 79%);
+  cursor: pointer;
+}
+
+.custom-checkbox::after {
+  content: "";
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transition: all 0.5s ease-in-out;
+  transform: translate(0%, -50%);
+}
+
+.container-toggle input:checked + .custom-checkbox::after {
+  right: 0;
+  transform: translate(-125%, -50%);
+}
+
 .title {
   font-size: 2.2rem;
+}
+
+a {
+  color: hsl(236deg, 72%, 79%);
+  text-decoration: none;
 }
 
 .card {
@@ -54,8 +108,9 @@ body {
   margin: 0;
   padding-top: 3rem;
 }
-.card__price {
+.card__price, .card__price-alt {
   font-size: 4.4rem;
+  color: hsl(232deg, 13%, 33%);
 }
 .card__price-alt {
   display: none;
@@ -73,6 +128,10 @@ body {
   background: linear-gradient(45deg, hsl(236deg, 72%, 79%) -10%, hsl(237deg, 63%, 64%) 40%);
   color: hsl(240deg, 78%, 98%);
 }
+.card-primary .card__price,
+.card-primary .card__price-alt {
+  color: #fff;
+}
 .card-primary .card__text {
   border-color: hsl(236deg, 72%, 79%);
 }
@@ -80,15 +139,20 @@ body {
   border-bottom: 1px solid hsl(236deg, 72%, 79%);
 }
 
+.attribution {
+  text-align: center;
+}
+
 .pricing-section {
   text-align: center;
   width: 100%;
+  margin-bottom: 3rem;
 }
 .pricing-section__body {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 40rem) {
+@media (min-width: 64rem) {
   .pricing-section__body {
     flex-direction: row;
     justify-content: center;
@@ -99,6 +163,9 @@ body {
 }
 .pricing-section__header {
   margin-bottom: 4rem;
+}
+.pricing-section__header span {
+  color: hsl(234deg, 14%, 74%);
 }
 .pricing-section .title {
   margin-bottom: 2rem;
@@ -115,6 +182,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 @media (min-width: 40rem) {
   body {

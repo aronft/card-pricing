@@ -16,6 +16,9 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  padding-left: $spacing;
+  padding-right: $spacing;
 }
 
 .container {

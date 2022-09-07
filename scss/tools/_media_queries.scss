@@ -3,3 +3,9 @@
     @content;
   }
 }
+
+@mixin for-laptop-landscape {
+  @media (min-width: 64rem) {
+    @content;
+  }
+}

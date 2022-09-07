@@ -23,8 +23,10 @@
     padding-top: 3rem;
   }
 
-  &__price {
+  &__price,
+  &__price-alt {
     font-size: $fs-title-xl;
+    color: $text-dark-color;
   }
 
   &__price-alt {
@@ -50,6 +52,11 @@
     $primary-dark-color 40%
   );
   color: $btn-text-color;
+
+  .card__price,
+  .card__price-alt {
+    color: $white-color;
+  }
 
   .card__text {
     border-color: $primary-color;
